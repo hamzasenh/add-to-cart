@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.info {
+    opacity: 0;
+}
+
+.card:hover {
+
+    .info {
+        opacity: 1;
+    }
+
+    img{
+        filter: brightness(.7);
+        
+    }
+
+}
+
+.shopping-cart{
+
+    &:before {
+        content:attr(data-totalitems);
+        font-size:9px;
+        font-weight:600;
+        position:absolute;
+        top: 56px;
+        right: 147px;
+        background: red;
+        line-height:18px;
+        padding:0 5px;
+        height:18px;
+        min-width:18px;
+        color:white;
+        text-align:center;
+        border-radius:24px;
+      }
+}
+
+ 
